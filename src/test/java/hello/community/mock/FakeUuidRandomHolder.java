@@ -1,6 +1,6 @@
 package hello.community.mock;
 
-import hello.community.application.common.service.UuidRandomHolder;
+import hello.community.application.common.service.port.UuidRandomHolder;
 
 public class FakeUuidRandomHolder implements UuidRandomHolder {
     private String random;

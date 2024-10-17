@@ -1,6 +1,6 @@
 package hello.community.mock;
 
-import hello.community.application.common.service.LocalInstantHolder;
+import hello.community.application.common.service.port.LocalInstantHolder;
 
 public class FakeInstantHolder implements LocalInstantHolder {
     private Long instant;

@@ -1,6 +1,6 @@
 package hello.community.application.common.infrastructure;
 
-import hello.community.application.common.service.UuidRandomHolder;
+import hello.community.application.common.service.port.UuidRandomHolder;
 import java.util.UUID;
 import org.springframework.stereotype.Component;
 

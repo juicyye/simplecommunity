@@ -1,8 +1,8 @@
 package hello.community.application.user.service;
 
-import hello.community.application.common.service.LocalDateTimeHolder;
-import hello.community.application.common.service.LocalInstantHolder;
-import hello.community.application.common.service.UuidRandomHolder;
+import hello.community.application.common.service.port.LocalDateTimeHolder;
+import hello.community.application.common.service.port.LocalInstantHolder;
+import hello.community.application.common.service.port.UuidRandomHolder;
 import hello.community.application.user.controller.req.UserCreateReqDto;
 import hello.community.application.user.domain.User;
 import hello.community.application.user.service.port.LocalPasswordEncoder;

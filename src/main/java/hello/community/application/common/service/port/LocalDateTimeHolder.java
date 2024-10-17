@@ -1,4 +1,4 @@
-package hello.community.application.common.service;
+package hello.community.application.common.service.port;
 
 import java.time.LocalDateTime;
 

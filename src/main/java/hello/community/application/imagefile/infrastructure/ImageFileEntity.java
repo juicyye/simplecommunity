@@ -11,10 +11,12 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 import lombok.Getter;
 
 @Getter
 @Entity
+@Table(name = "image_file_tb")
 public class ImageFileEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

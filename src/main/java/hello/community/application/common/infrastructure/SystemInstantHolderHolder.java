@@ -1,6 +1,6 @@
 package hello.community.application.common.infrastructure;
 
-import hello.community.application.common.service.LocalInstantHolder;
+import hello.community.application.common.service.port.LocalInstantHolder;
 import java.time.Instant;
 import org.springframework.stereotype.Component;
 

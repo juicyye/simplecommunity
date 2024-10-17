@@ -1,14 +1,13 @@
 package hello.community.application.user.domain;
 
-import hello.community.application.common.service.LocalDateTimeHolder;
-import hello.community.application.common.service.UuidRandomHolder;
+import hello.community.application.common.service.port.LocalDateTimeHolder;
+import hello.community.application.common.service.port.UuidRandomHolder;
 import hello.community.application.user.controller.req.UserCreateReqDto;
 import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.ToString;
 
 @AllArgsConstructor
 @Getter

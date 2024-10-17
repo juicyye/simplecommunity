@@ -1,6 +1,6 @@
 package hello.community.application.common.infrastructure;
 
-import hello.community.application.common.service.LocalDateTimeHolder;
+import hello.community.application.common.service.port.LocalDateTimeHolder;
 import java.time.LocalDateTime;
 import org.springframework.stereotype.Component;
 
