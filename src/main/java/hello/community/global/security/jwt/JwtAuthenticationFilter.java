@@ -3,7 +3,6 @@ package hello.community.global.security.jwt;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import hello.community.application.common.service.CustomResponseUtil;
 import hello.community.application.user.controller.req.UserLoginReqDto;
-import hello.community.global.security.dto.LoginUser;
 import hello.community.global.security.dto.PrincipalDetails;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
