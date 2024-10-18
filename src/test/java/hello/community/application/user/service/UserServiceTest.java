@@ -4,7 +4,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 import hello.community.application.user.controller.req.UserCreateReqDto;
+import hello.community.application.user.domain.Role;
 import hello.community.application.user.domain.User;
+import hello.community.application.user.domain.UserStatus;
+import hello.community.application.user.service.port.UserRepository;
 import hello.community.mock.FakeInstantHolder;
 import hello.community.mock.FakeLocalDateTimeHolder;
 import hello.community.mock.FakePasswordEncoder;
@@ -18,17 +21,19 @@ import org.junit.jupiter.api.Test;
 class UserServiceTest {
 
     private UserService userService;
-    LocalDateTime localDateTime = LocalDateTime.of(2024, 10, 16, 19, 41, 30);
-
+    private LocalDateTime localDateTime = LocalDateTime.of(2024, 10, 16, 19, 41, 30);
     @BeforeEach
     void setUp() {
+        FakeUserRepository userRepository = new FakeUserRepository();
         this.userService = new UserService(
-                new FakeUserRepository(),
+                userRepository,
                 new FakeLocalDateTimeHolder(localDateTime),
                 new FakeInstantHolder(123L),
                 new FakePasswordEncoder("fixPassword"),
                 new FakeUuidRandomHolder("랜덤")
         );
+
+
     }
 
     @Test
